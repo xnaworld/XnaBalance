@@ -1,5 +1,4 @@
 
-Xna coin check balance demo
 ===============
 
 Donate address:
