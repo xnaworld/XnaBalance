@@ -30,6 +30,16 @@
         {
             tabMain = new TabControl();
             tabPage1 = new TabPage();
+            lblTime = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            txtRecentAmount = new TextBox();
+            label10 = new Label();
+            label9 = new Label();
+            txtRecentAddress = new TextBox();
+            label7 = new Label();
+            txtAccountBalance = new TextBox();
+            label8 = new Label();
             llAccountBalance = new LinkLabel();
             label3 = new Label();
             llCheck = new LinkLabel();
@@ -43,9 +53,6 @@
             label5 = new Label();
             label6 = new Label();
             txtIP = new TextBox();
-            label7 = new Label();
-            txtAccountBalance = new TextBox();
-            label8 = new Label();
             tabMain.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -64,6 +71,13 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(lblTime);
+            tabPage1.Controls.Add(label12);
+            tabPage1.Controls.Add(label11);
+            tabPage1.Controls.Add(txtRecentAmount);
+            tabPage1.Controls.Add(label10);
+            tabPage1.Controls.Add(label9);
+            tabPage1.Controls.Add(txtRecentAddress);
             tabPage1.Controls.Add(label7);
             tabPage1.Controls.Add(txtAccountBalance);
             tabPage1.Controls.Add(label8);
@@ -81,6 +95,95 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Balance";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // lblTime
+            // 
+            lblTime.AutoSize = true;
+            lblTime.Location = new Point(149, 210);
+            lblTime.Name = "lblTime";
+            lblTime.Size = new Size(50, 17);
+            lblTime.TabIndex = 21;
+            lblTime.Text = "lblTime";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(48, 210);
+            label12.Name = "label12";
+            label12.Size = new Size(91, 17);
+            label12.TabIndex = 20;
+            label12.Text = "Recent Time：";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(341, 174);
+            label11.Name = "label11";
+            label11.Size = new Size(30, 17);
+            label11.TabIndex = 19;
+            label11.Text = "Xna";
+            // 
+            // txtRecentAmount
+            // 
+            txtRecentAmount.Location = new Point(149, 168);
+            txtRecentAmount.Name = "txtRecentAmount";
+            txtRecentAmount.ReadOnly = true;
+            txtRecentAmount.Size = new Size(186, 23);
+            txtRecentAmount.TabIndex = 18;
+            txtRecentAmount.TextAlign = HorizontalAlignment.Right;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(28, 174);
+            label10.Name = "label10";
+            label10.Size = new Size(108, 17);
+            label10.TabIndex = 17;
+            label10.Text = "Recent Amount：";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(28, 135);
+            label9.Name = "label9";
+            label9.Size = new Size(111, 17);
+            label9.TabIndex = 16;
+            label9.Text = "Recent Address：";
+            // 
+            // txtRecentAddress
+            // 
+            txtRecentAddress.Location = new Point(149, 129);
+            txtRecentAddress.Name = "txtRecentAddress";
+            txtRecentAddress.ReadOnly = true;
+            txtRecentAddress.Size = new Size(496, 23);
+            txtRecentAddress.TabIndex = 15;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(341, 94);
+            label7.Name = "label7";
+            label7.Size = new Size(30, 17);
+            label7.TabIndex = 14;
+            label7.Text = "Xna";
+            // 
+            // txtAccountBalance
+            // 
+            txtAccountBalance.Location = new Point(149, 88);
+            txtAccountBalance.Name = "txtAccountBalance";
+            txtAccountBalance.ReadOnly = true;
+            txtAccountBalance.Size = new Size(186, 23);
+            txtAccountBalance.TabIndex = 13;
+            txtAccountBalance.TextAlign = HorizontalAlignment.Right;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(28, 91);
+            label8.Name = "label8";
+            label8.Size = new Size(106, 17);
+            label8.TabIndex = 12;
+            label8.Text = "Account Balance:";
             // 
             // llAccountBalance
             // 
@@ -205,33 +308,6 @@
             txtIP.TabIndex = 11;
             txtIP.Text = "localhost";
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(341, 94);
-            label7.Name = "label7";
-            label7.Size = new Size(30, 17);
-            label7.TabIndex = 14;
-            label7.Text = "Xna";
-            // 
-            // txtAccountBalance
-            // 
-            txtAccountBalance.Location = new Point(149, 88);
-            txtAccountBalance.Name = "txtAccountBalance";
-            txtAccountBalance.ReadOnly = true;
-            txtAccountBalance.Size = new Size(186, 23);
-            txtAccountBalance.TabIndex = 13;
-            txtAccountBalance.TextAlign = HorizontalAlignment.Right;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(28, 91);
-            label8.Name = "label8";
-            label8.Size = new Size(106, 17);
-            label8.TabIndex = 12;
-            label8.Text = "Account Balance:";
-            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -268,5 +344,12 @@
         private Label label7;
         private TextBox txtAccountBalance;
         private Label label8;
+        private Label label9;
+        private TextBox txtRecentAddress;
+        private Label label11;
+        private TextBox txtRecentAmount;
+        private Label label10;
+        private Label lblTime;
+        private Label label12;
     }
 }
