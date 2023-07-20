@@ -24,6 +24,7 @@ namespace XnaBalance
         {
             if(strAddress=="")
                 return "";
+
             //Set up any parameters we may need
             JObject parameters = new JObject();
             parameters.Add("addresses", strAddress);

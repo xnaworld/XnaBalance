@@ -12,6 +12,7 @@ namespace XnaBalance
         {
             public float result { get; set; }
             public object error { get; set; }
+
             public int id { get; set; }
         }
     }
